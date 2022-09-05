@@ -1,0 +1,61 @@
+/* Set default color theme */
+body {
+    background-color: skyblue;
+}
+
+p{
+    background-color: var(--color2);
+    margin: 4px;
+    padding: 2px;
+    border: 2px solid black;
+}
+
+img{
+    height:auto;
+    max-width: 300px;
+}
+
+.gap{
+    min-height: 4px;
+}
+
+
+.my-nav{
+    min-height: 80px;
+    max-height: 120px;
+}
+
+.image{
+    object-fit: scale-down;
+    overflow:hidden;
+    border: 2px black solid;
+}
+
+.welcome{
+    background-color: lightgoldenrodyellow;
+}
+
+.footer{
+    position:fixed;
+    left: 0;
+    bottom: 0;
+    width:100%;
+    background-color: var(--color2);
+    min-height: 50px;
+    text-align:center;
+
+}
+
+#intro-p1{
+    background-color:var(--color3); 
+    margin: 5px;
+}
+
+#intro-photo{
+    size: 30%;
+    margin: 6px;
+}
+
+#designed-by{
+    font-size: 14px;
+}
