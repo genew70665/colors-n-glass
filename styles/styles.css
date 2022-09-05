@@ -35,6 +35,13 @@ img{
     background-color: lightgoldenrodyellow;
 }
 
+.history{
+    color:chocolate;
+    text-align: center;
+    font-weight: bold;
+    text-decoration:overline underline;
+}
+
 .footer{
     position:fixed;
     left: 0;
@@ -46,9 +53,13 @@ img{
 
 }
 
+.intro{
+    pb-2
+}
+
 #intro-p1{
     background-color:var(--color3); 
-    margin: 5px;
+    
 }
 
 #intro-photo{
