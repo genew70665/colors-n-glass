@@ -1,18 +1,14 @@
 /* Set default color theme */
 body {
-    background-color: skyblue;
+    background-color:blue;
 }
 
 p{
     background-color: var(--color2);
+    color: white;
     margin: 4px;
     padding: 2px;
     border: 2px solid black;
-}
-
-img{
-    height:auto;
-    max-width: 300px;
 }
 
 .gap{
@@ -23,21 +19,62 @@ img{
 .my-nav{
     min-height: 80px;
     max-height: 120px;
+    background-color:coral;
+    color: white;
+}
+
+.nav-item{
+    color:white;
 }
 
 .container-1{
     position:relative;
 }
 
+.image-container{
+    background-color:blanchedalmond;
+    width: 100%;
+    height: 360px;
+    position:relative;
+    padding-bottom: 1rem;
+
+}
 .image{
-    object-fit: cover;
-    position: absolute
+    position:relative;
+    left: .5rem;
+    bottom: 1.0rem;
+    height: 400px;
+    object-fit:contain;
     overflow:hidden;
+    color:white;
     border: 2px black solid;
 }
 
 .welcome{
     background-color: lightgoldenrodyellow;
+}
+
+
+.carousel-item {
+    height: 32rem;
+    color: white;
+    position: relative;
+    justify-items:auto;
+    padding: auto;
+}
+
+#item-1 {
+    height: 32rem;
+    color: white;
+    position: relative;
+    background-image: url(./img/flying-bird.jpg);
+    background-image: cover;
+
+}
+
+.my-jumbotron{
+    background-image: url("./img/goose.jpg");
+    object-fit: cover;
 }
 
 .history{
@@ -56,10 +93,6 @@ img{
     min-height: 50px;
     text-align:center;
 
-}
-
-.intro{
-    pb-2
 }
 
 #intro-p1{
