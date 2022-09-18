@@ -3,11 +3,18 @@ body {
     background-color:blue;
 }
 
-p{
-    background-color: var(--color2);
+p {
     color: white;
-    margin: 4px;
+    margin: 6px;
     padding: 2px;
+    border: 2px solid black;
+}
+
+.jumbo-paragraph {
+    color:white;
+    margin: 2px;
+    padding: 2px;
+    width: 70%;
     border: 2px solid black;
 }
 
@@ -17,8 +24,8 @@ p{
 
 
 .my-nav{
-    min-height: 80px;
-    max-height: 120px;
+    min-height: 120px;
+    max-height: 160px;
     background-color:coral;
     color: white;
 }
@@ -32,11 +39,10 @@ p{
 }
 
 .image-container{
-    background-color: blue;
+    background-color: skyblue;
     width: 100%;
-    height: 360px;
     position:relative;
-    padding-bottom: 1rem;
+    padding-bottom: .2rem;
 
 }
 .image{
@@ -54,10 +60,10 @@ p{
     position:relative;
     left: .5rem;
     bottom: 1.0rem;
-    height: 400px;
-    object-fit:contain;
+    height: 200px;
+    object-fit:cover;
     overflow:hidden;
-    color:white;
+    color:darkgrey;
     border: 2px black solid;
 }
 
@@ -85,8 +91,18 @@ p{
 }
 
 .my-jumbotron{
-    background-image: url("./img/goose.jpg");
+    min-height:200 px;
+   
+}
+
+.jumbo-image-container{
+    min-height: 160px;
     object-fit: cover;
+    background-image: url("./img/jumbo-banner2.jpg");
+}
+
+.button-container{
+    border: 2px solid green;
 }
 
 .history{
