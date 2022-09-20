@@ -1,6 +1,6 @@
 /* Set default color theme */
 body {
-    background-color:blue;
+    background-color: #f0efbd;
 }
 
 p {
@@ -10,11 +10,35 @@ p {
     border: 2px solid black;
 }
 
+.top-info{ 
+    height: 30px;
+    width: 100%;
+    background-color:#f0efbd;
+    color:blue;
+    padding-top: 0.5rem;
+    padding-bottom: 1.5rem;
+    margin-bottom:1rem;
+    position: relative;
+    font-size:large;
+    font-weight: 400;
+    
+}
+
+ul{
+    list-style-type: none;
+}
+
+ul li{
+    display:inline;
+    padding: 10px;
+}
+   
+
 .jumbo-paragraph {
     color:white;
     margin: 2px;
     padding: 2px;
-    width: 70%;
+    width: 40%;
     border: 2px solid black;
 }
 
@@ -25,13 +49,18 @@ p {
 
 .my-nav{
     min-height: 120px;
-    max-height: 160px;
-    background-color:coral;
-    color: white;
+    max-height: 140px;
+    background-color: #8bc6dc;
 }
 
 .nav-item{
     color:white;
+}
+.my-nav-link{
+    color: white;
+    font-style:italic;
+    font-size: 50px;
+    font-weight: 700;
 }
 
 .container-1{
@@ -42,7 +71,8 @@ p {
     background-color: skyblue;
     width: 100%;
     position:relative;
-    padding-bottom: .2rem;
+    margin-top:1rem;
+    padding-bottom: .5rem;
 
 }
 .image{
@@ -72,6 +102,16 @@ p {
     background-color: lightgoldenrodyellow;
 }
 
+.line-break{
+        margin-top:3rem;
+        min-height: 20px;
+        width: 100%;
+        object-fit: cover;
+        background-color:#f0efbd;
+        position:relative;
+        
+}
+
 
 .carousel-item {
     height: 32rem;
@@ -91,7 +131,9 @@ p {
 }
 
 .my-jumbotron{
-    min-height:200 px;
+    min-height:180 px;
+    position:absolute;
+    margin-bottom: 1rem;
    
 }
 
@@ -99,14 +141,28 @@ p {
     min-height: 160px;
     object-fit: cover;
     background-image: url("./img/jumbo-banner2.jpg");
+    position:relative;
 }
 
 .button-container{
     border: 2px solid green;
+    position: absolute;
+    left:2rem;
+}
+
+.jumbo-button {
+    border: 2px solid green;
+    position: absolute;
+    margin-left: 0;
+    margin-right:4;
+    padding-left:4;
+    background-color: orange
 }
 
 .history{
+    background-color:red;
     color:chocolate;
+    width:100%;
     text-align: center;
     font-weight: bold;
     text-decoration:overline underline;

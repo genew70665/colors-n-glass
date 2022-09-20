@@ -1,0 +1,15 @@
+/* Try it CSS */
+
+body{
+    background-color:aquamarine;
+    background-image: url('./styles/tryit.css/sun-lake.jpg');
+}
+
+.break-line{
+    min-height: 20px;
+    object-fit: cover;
+    background-color:antiquewhite;
+    background-image: url("./img/jumbo-banner2.jpg");
+    position:relative;
+    
+}
