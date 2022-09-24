@@ -1,6 +1,7 @@
 /* Set default color theme */
 body {
-    background-color: #f0efbd;
+    padding: 0;
+    
 }
 
 p {
@@ -10,9 +11,15 @@ p {
     border: 2px solid black;
 }
 
+.background-picture{
+    background-image:url(./img/sun-lake.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
 .top-info{ 
     height: 30px;
-    width: 100%;
+    width: 95%;
     background-color:#f0efbd;
     color:blue;
     padding-top: 0.5rem;
@@ -21,6 +28,7 @@ p {
     position: relative;
     font-size:large;
     font-weight: 400;
+    margin-left: 5px;;
     
 }
 
@@ -174,6 +182,7 @@ ul li{
     bottom: 0;
     width:100%;
     background-color: var(--color2);
+    color: white;
     min-height: 50px;
     text-align:center;
 
@@ -190,5 +199,5 @@ ul li{
 }
 
 #designed-by{
-    font-size: 14px;
+    font-size: 18px;
 }
