@@ -1,6 +1,8 @@
 /* Set default color theme */
 body {
     padding: 0;
+    background-image: url(../img/bluefade.jpg);
+    background-size:cover;
     
 }
 
@@ -12,24 +14,42 @@ p {
 }
 
 .background-picture{
-    background-image:url(./img/sun-lake.jpg);
+    background-image:url(../img/duck-swimming-in-door.jpg);
+    width:100%;
     background-size:cover;
     background-repeat: no-repeat;
 }
 
 .top-info{ 
-    height: 30px;
-    width: 95%;
+    height: 50px;
+    width: 100%;
     background-color:#f0efbd;
-    color:blue;
+    color:blue; 
     padding-top: 0.5rem;
-    padding-bottom: 1.5rem;
-    margin-bottom:1rem;
+    padding-bottom: 2.5rem;
     position: relative;
-    font-size:large;
+    font-size:medium;
     font-weight: 400;
+    transition:ease-in;
+    transition-duration: 100;
     margin-left: 5px;;
     
+}
+
+#social{
+    position: absolute;
+    align-self:center;
+    border: 2px solid red;
+}
+
+.company-name{
+    font-size:46px;
+    font-style: italic;
+    font-style: oblique;
+    color: white;
+    font-weight: 600;
+    margin-left: 2rem;
+    margin-top: 5px;
 }
 
 ul{
@@ -58,11 +78,14 @@ ul li{
 .my-nav{
     min-height: 120px;
     max-height: 140px;
-    background-color: #8bc6dc;
+    background-color:blue;
+    border-bottom: 4px solid #fdefbd;
 }
 
 .nav-item{
     color:white;
+    align-items:center;
+    margin-left:5rem;
 }
 .my-nav-link{
     color: white;
@@ -108,11 +131,13 @@ ul li{
 
 .welcome{
     background-color: lightgoldenrodyellow;
+    min-height:80px;
+    font-size: large;
 }
 
 .line-break{
         margin-top:3rem;
-        min-height: 20px;
+        min-height: 60px;
         width: 100%;
         object-fit: cover;
         background-color:#f0efbd;
@@ -120,17 +145,21 @@ ul li{
         
 }
 
+.carouselk-inner{
+    width: 70px;
+
+}
 
 .carousel-item {
-    height: 32rem;
+    height:48em;
     color: white;
     position: relative;
-    justify-items:auto;
+    object-fit:contain;
     padding: auto;
 }
 
 #item-1 {
-    height: 32rem;
+    height: 560px;
     color: white;
     position: relative;
     background-image: url(./img/flying-bird.jpg);
@@ -138,10 +167,33 @@ ul li{
 
 }
 
+.carousel-img{
+    height: 70%;
+    width:60%;
+    object-fit: contain;
+}
+
+.middle-info{ 
+    height: 50px;
+    width: 100%;
+    background-color:#f0efbd;
+    color:blue; 
+    padding-top: 0.5rem;
+    padding-bottom: 2.5rem;
+    position: relative;
+    font-size:medium;
+    font-weight: 400;
+    transition:ease-in;
+    transition-duration: 100;
+    margin-left: 5px;;
+    
+}
+
 .my-jumbotron{
     min-height:180 px;
     position:absolute;
     margin-bottom: 1rem;
+    border-bottom: 8px solid #fdefbd;
    
 }
 
@@ -176,6 +228,97 @@ ul li{
     text-decoration:overline underline;
 }
 
+.gallery{
+    display:grid;
+    gap: 1.5rem;
+    margin: auto;
+    position:relative;
+}
+
+.box-1{
+    min-height: 60em;
+    max-height: 80em;
+    background-image:url(../img/duck-swimming-in-door.jpg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    object-position:bottom;
+    border: 4px solid white;
+    margin: 10px;
+
+}
+
+.box-2{
+    min-height: 60em;
+    max-height: 80px;
+    background-image:url(../img/eiffel-tower.jpg);
+    object-position: bottom;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    border: 2px solid white;
+
+}
+
+.box-3{
+    min-height: 60em;
+    background-image:url(../img/fish.jpg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    transition: ease-in;
+    border: 2px solid white;
+
+}
+
+.box-4{
+    min-height: 60em;
+    background-image:url(../img/eiffel-tower.jpg);
+    object-position: ;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    border: 2px solid white;
+
+}
+
+.box-5{
+    min-height: 60em;
+    background-image:url(../img/goose.jpg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    transition: ease-in;
+    border: 2px solid white;
+
+}
+
+.box-6{
+    min-height: 60em;
+    background-image:url(../img/cross.jpg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    transition: ease-in;
+    border: 2px solid white;
+
+}
+
+.testimonials-title{
+    height:80px;
+    background-color: skyblue;
+    color: white;
+    position:relative;
+    text-align: center;
+}
+
+.testimonials{
+    display:flex;
+    background-color: blue;
+    height:60px;
+}
+
+
+.faye-bio{
+    display:flexbox;
+
+}
+
+
 .footer{
     position:fixed;
     left: 0;
@@ -183,9 +326,13 @@ ul li{
     width:100%;
     background-color: var(--color2);
     color: white;
-    min-height: 50px;
+    min-height: 60px;
     text-align:center;
 
+}
+
+.CnG{
+    font-style:italic;
 }
 
 #intro-p1{
