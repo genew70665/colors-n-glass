@@ -21,12 +21,12 @@ p {
 }
 
 .top-info{ 
-    height: 50px;
+    min-height: 3%;
     width: 100%;
     background-color:#f0efbd;
     color:blue; 
-    padding-top: 0.5rem;
-    padding-bottom: 2.5rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.5rem;
     position: relative;
     font-size:medium;
     font-weight: 400;
@@ -145,7 +145,16 @@ ul li{
         
 }
 
+.slide-container{
+    display:flex;
+    background-color: grey;
+    max-width: 100%;
+    padding: 0;
+    align-items:center;
+    justify-content:center;
+}
 .carouselk-inner{
+    position: absolute;
     width: 70px;
 
 }
@@ -158,12 +167,24 @@ ul li{
     padding: auto;
 }
 
+.my-carousel{
+    align-items:center;
+    background-color:aquamarine;
+    padding-top:2rem;
+    padding-bottom: 2rem;
+}
+
+.my-active-carousel-item{
+    max-width: 70%;
+    align-self:center;
+}
+
 #item-1 {
-    height: 560px;
+    min-height:680px;
     color: white;
     position: relative;
     background-image: url(./img/flying-bird.jpg);
-    background-image: cover;
+    background-image: contain;
 
 }
 
@@ -308,9 +329,52 @@ ul li{
 
 .testimonials{
     display:flex;
-    background-color: blue;
-    height:60px;
+    background-color:aqua;
+    min-height:600px;
+    /* Works on ? axis */
+    justify-content:space-between;
+    padding-bottom: 8em;
 }
+
+.testimonial-heading{
+    display:flex;
+    justify-content:space-around;
+    margin-top:10px;
+    margin-bottom:10px;
+    min-height:max-content;
+
+}
+
+.item{
+    width: 30%;
+    margin: 10px;
+    background-color:azure;
+    color:blue;
+    box-sizing:border-box;
+    margin-top:1rem;
+}
+
+.item img{
+    height: 80px;
+    margin-top: 5px;
+}
+
+
+.item:nth-of-type(3){
+    flex-grow: 3;
+
+}
+
+.item:nth-of-type(2){
+    flex-grow: 2;
+
+}
+
+.item:nth-of-type(1){
+    flex-grow: 1;
+
+}
+
 
 
 .faye-bio{
@@ -332,7 +396,11 @@ ul li{
 }
 
 .CnG{
+    display:flex;
     font-style:italic;
+    justify-content:space-between;
+    padding-right: 2rem;;
+
 }
 
 #intro-p1{
