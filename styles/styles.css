@@ -25,10 +25,10 @@ p {
     width: 100%;
     background-color:#f0efbd;
     color:blue; 
-    padding-top: 0.3rem;
+    padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     position: relative;
-    font-size:medium;
+    font-size:large;
     font-weight: 400;
     transition:ease-in;
     transition-duration: 100;
@@ -152,26 +152,37 @@ ul li{
     padding: 0;
     align-items:center;
     justify-content:center;
+    align-content:center;
 }
 .carouselk-inner{
     position: absolute;
     width: 70px;
+    border: 2px solid red;
 
 }
 
 .carousel-item {
-    height:48em;
+    height:44em;
     color: white;
     position: relative;
     object-fit:contain;
     padding: auto;
+    border: 2px solid red;
+    align-self:center;
 }
 
 .my-carousel{
     align-items:center;
     background-color:aquamarine;
     padding-top:2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 2rem; 
+}
+
+
+.carousel-ccontrol-span{
+    background-color:coral;
+    color: coral;
+    font-size: 20px;
 }
 
 .my-active-carousel-item{
@@ -192,6 +203,7 @@ ul li{
     height: 70%;
     width:60%;
     object-fit: contain;
+    align-self: center;
 }
 
 .middle-info{ 
@@ -332,7 +344,7 @@ ul li{
     background-color:aqua;
     min-height:600px;
     /* Works on ? axis */
-    justify-content:space-between;
+    justify-content:space-around;
     padding-bottom: 8em;
 }
 
@@ -351,12 +363,20 @@ ul li{
     background-color:azure;
     color:blue;
     box-sizing:border-box;
-    margin-top:1rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .item img{
-    height: 80px;
+    height: 220px;
     margin-top: 5px;
+    border-radius: 50%;
+    border-color: 2px solid red;
+}
+
+.item h2{
+    align-self:center;
 }
 
 
@@ -385,6 +405,7 @@ ul li{
 
 .footer{
     position:fixed;
+    bottom:0;
     left: 0;
     bottom: 0;
     width:100%;
@@ -415,4 +436,71 @@ ul li{
 
 #designed-by{
     font-size: 18px;
+}
+
+/* Start of About Page Styling */
+
+.about-intro{
+    display: flex;
+    max-width: 100%;
+    min-height:300px;
+    background: aquamarine;
+    align-items: center;
+    justify-content: left;
+    align-content:space-between; 
+    padding-top: 1.5rem;
+    padding-bottom:1.5rem;
+}
+
+.faye-photo{
+    background-color:azure;
+    min-height:360px;
+    width: 30%;
+    margin:20px;
+    border-radius:25%;
+}
+
+.faye-photo img{
+    border-radius:5%;
+}
+
+.faye-bio{
+    background-color:blue;
+    min-height:360px;
+    width: 30%;
+    margin:20px;
+    color: #fff;
+}
+
+.glass-art-process{
+    display: flex;
+    max-width: 100%;
+    min-height:300px;
+    background: darkorange;
+    align-items: center;
+    justify-content: left;
+    align-content:space-between; 
+    padding-top: 1.5rem;
+    padding-bottom:1.5rem;
+}
+
+.steps{
+    background-color:chocolate;
+    min-height: 300px;
+}
+
+.holder{
+    width:100%;
+    min-height:480px;
+    background-color:darkgoldenrod;
+    align-self:center;
+    padding-left:5px;
+    margin-left: 2px;
+    text-align:center;
+}
+
+.holder h1{
+    color:whitesmoke;
+    font-size:64px;
+    align-self:center;
 }
