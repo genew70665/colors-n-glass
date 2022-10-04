@@ -1,7 +1,8 @@
 /* Set default color theme */
 body {
     padding: 0;
-    background-image: url(../img/bluefade.jpg);
+    background-color: black;
+    background-image: url(../img/bluefade.jpgcng);
     background-size:cover;
     
 }
@@ -369,24 +370,23 @@ ul li{
 }
 
 .item img{
-    height: 220px;
+    height: 140px;
     margin-top: 5px;
-    border-radius: 50%;
+    border-radius: 75%;
     border-color: 2px solid red;
 }
 
 .item h2{
-    align-self:center;
-}
-
+    align-content: center;
+}  
 
 .item:nth-of-type(3){
-    flex-grow: 3;
+    flex-grow: 1;
 
 }
 
 .item:nth-of-type(2){
-    flex-grow: 2;
+    flex-grow: 1;
 
 }
 
@@ -418,9 +418,13 @@ ul li{
 
 .CnG{
     display:flex;
+    flex-direction: row;
     font-style:italic;
     justify-content:space-between;
-    padding-right: 2rem;;
+    align-items:center;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-top:1rem;
 
 }
 
@@ -436,9 +440,38 @@ ul li{
 
 #designed-by{
     font-size: 18px;
+    align-items: center;
+    padding-left: 2rem;ccng
 }
 
 /* Start of About Page Styling */
+
+.gallery-container{
+    background-color:aquamarine;
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.gallery-image{
+    width: 250px;
+    height:250px;
+    object-fit: cover;
+    object-position: bottom;
+    margin: 25px;
+  
+}
+
+.gallery-image:hover{
+    cursor: pointer;
+    z-index:1;
+    zoom: 3.0;
+    overflow:visible;
+    transition: 2000ms ease-in-ease-out;
+
+}
+
 
 .about-intro{
     display: flex;
@@ -503,4 +536,33 @@ ul li{
     color:whitesmoke;
     font-size:64px;
     align-self:center;
+}
+
+.button{
+    background:coral;
+    padding: 2em;
+    color:#fff;
+}
+
+.button:hover{
+    background: #333;
+}
+
+.modal{
+    /*display:none; */
+    position: fixed;
+    z-index:1;
+    left:0;
+    top:0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content{
+    background-color:#f4f4f4;
+    margin: 20% auto;
+    padding:20px;
+    width: 70%;
 }
