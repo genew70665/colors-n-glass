@@ -4,14 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
     <link rel="stylesheet" href="./styles/my-colors.css">
     <link rel="stylesheet" href="./styles/styles.css">
-
-    <title>Colors n Glass</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <title class="company-logo">Colors n Glass</title>
 </head>
 <body>
   
@@ -27,84 +25,95 @@
     </ul>
   </div>
     <!-- Navigation bar-->
-    <nav class="navbar navbar-expand-lg  my-nav pt-8 pb-0 ml-6">
-      <a class="navbar-brand ml-10"> <h1 class="company-name"> Colors n Glass</h1> </a>
-      <!---  <a class="navbar-brand ml-3"><img src="./img/fish-logo.svg" width="160px" height="140px"></img></a> -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link my-nav-link">Home <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link my-nav-link" href="./gallery.html">Gallery</a>
+              <a class="nav-link" href="gallery.html">Gallery</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link my-nav-link" href="about.html">About</a>
-            </li>
-              <li class="nav-item">
-                <a class="nav-link my-nav-link" href="./contact.html">Contact</a>
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link my-nav-link" href="https://www.facebook.com/Colors-n-glass-104354094266790"><img src="img/facebook-logo.png" alt="facebook icon not found" style="height:80px"></a>
-          </li>
+              <a class="nav-link disabled">Disabled</a>
+            </li>
           </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
+    
+    
     
       <!-- Intro paragaph and photo-->
       <br>
       <br>
-  <section class="slide-container">
-    <div id="carouselExampleInterval" class="carousel slide w-50 my-carousel" data-bs-ride="carousel">
-        <div class="carousel-inner my-carousel-inner">
-          <div class="carousel-item active my-active-carousel-item"  data-bs-interval="5000">
-            <img src="img/cat.jpg" class="d-block w-100 carousel-img" alt="...">
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="img/duck-swimming-in-door.jpg" class="d-block w-100 carousel-img" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="/img/fish.jpg" class="d-block w-100 carousel-img" alt="...">
-          </div>
-           <div class="carousel-item">
-            <img src="/img/goose.jpg" class="d-block w-100 carousel-img" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="/img/butterfly-in-door.jpg" class="d-block w-100 carousel-img" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="/img/flying-bird.jpg" class="d-block  w-100 carousel-img" alt="...">
-          </div>
+  <section class="slide-container" style="min-height:auto">
+    <div id="carouselExampleInterval" class="carousel slide w-100" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="5000">
+          <img src="img/sun-lake.jpg" class="d-block w-100 carousel-img" alt="...">
         </div>
-          
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="carousel-control-span">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-    
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="img/duck-swimming-in-door.jpg" class="d-block w-100 carousel-img" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/img/fish.jpg" class="d-block w-100 carousel-img" alt="...">
+        </div>
+         <div class="carousel-item">
+          <img src="/img/goose.jpg" class="d-block w-100 carousel-img" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/img/butterfly-in-door.jpg" class="d-block w-100 carousel-img" alt="...">
+        
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
   </section>
-
-      
   
-      
-      
-      
-      <div class="lne-break"></div>
-    <!-- Start of Gallery-->
-    <div class="holder">
-      <h1>Ideas to insert here</h1> I
-    </div>
-  
-  
+    <!-- Start of CTA-->
+    <div class="cta-home">
+      <div class="cta-text">
+        <p>Would like to share my love of stained glass. It is a very rewarding feeling to see a finished piece. I know people think it is expensive to buy but it can be a lasting beauty to have in your home. My prices dont even begin to touch the cost. Just to wake up in the morning and see the sun shining through is a beautiful way to start the day.I welcome any new ideas. Please check out my gallery page or vist my facebook-page. Thanks for visiting my website. 
+      </p>
+     </div>
      
+        <h2></h2>
+     </div>
+    <div class="testimonials-title">
+      <h1>Available Items</h1>
+     </div>  
+        <div class="available-items">
+          <div>
+            <img src="img/cat.jpg" alt=""  style="width:25%">
+            <p style="width:25%">Curious cat watching butterfly</p>
+          </div>
+          <div>
+            <img src="img/cat.jpg" alt=""  style="width:25%">
+            <p style="width:25%">Curious cat watching butterfly</p>
+          </div>
+          <div>
+            <img src="img/cat.jpg" alt=""  style="width:25%">
+            <p style="width:25%">Curious cat watching butterfly</p>
+          </div>
+        </div>
+
+
+     </div> 
     <!-- End of Gallery-->
 
     <!-- Start of Testimonaials-->
@@ -116,7 +125,7 @@
               <img src="img/headshot-1.jpg" alt="" width="30%">
               <h2>Sandy G.</h2>
             </div>
-            <div>
+            <div class="testimonial-text">
               We had Faye make two pieces of glass and they came out absolutely beautiful. I’m going to have another one made as soon as I can decide what I want in my bathroom window. Thank you so much Faye.
             </div>
         </div>
@@ -146,15 +155,11 @@
       </div>
       <br>
       <br>
-     
-      
-  
-
-
     </div>
+  
       <div class="gap"></div>
       <!-- Footer section-->
-      <div class="footer pt-6 mt-2" style="background-color:black; min-height: 120px;">
+      <div class="footer pt-6 mt-4" style="background-color:black; min-height: 120px;">
         <div class="CnG" style="min-height:90px">
           <div class="footer-item">
             <h2>999-999-9999</h2>
