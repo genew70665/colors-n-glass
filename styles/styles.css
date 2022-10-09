@@ -27,13 +27,12 @@ p {
     background-color:#f0efbd;
     color:blue; 
     padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.1rem;
     position: relative;
-    font-size:large;
-    font-weight: 500;
+    font-size:medium;
+    font-weight: 400;
     transition:ease-in;
     transition-duration: 100;
-    margin-left: 5px;;
     
 }
 
@@ -99,6 +98,7 @@ ul li{
     font-weight: 700;
 }
 
+
 .container-1{
     position:relative;
 }
@@ -152,14 +152,17 @@ ul li{
 
 .slide-container{
     display:flex;
-    max-width: 70%;
-    min-height: 800px;
+    min-width: 30%;
+    max-width:fit-content;
+    min-height: 50%;
+    max-height:fit-content;
     padding: 0;
     margin-left:auto;
     margin-right:auto;
     justify-content:center;
     align-items:flex-end;
     object-fit: cover;
+    object-position: center;
     margin-bottom: 5rem;
    
 }
@@ -286,6 +289,18 @@ ul li{
 
 
 /* Call to Action */
+.call-to-action{
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 5 rem;
+    text-align:center;
+
+}
+
+.call-to-action p{
+    font-size: large;
+}
+
 .cta-home{
     display: flex;
     min-height: 120px;
@@ -377,11 +392,12 @@ ul li{
 .available-items{
     display: flex;
     direction:row;
-    justify-content:space-between;
+    justify-content:space-around;
     align-items:center;
 
     min-height: 160px;
     margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 .available-items img :hover{
@@ -410,9 +426,10 @@ ul li{
     flex-wrap: wrap;
     min-height:600px;
     /* Works on ? axis */
-    justify-content:space-around;
+    justify-content:space-between;
     padding-bottom: 1.5rem;
     padding-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .testimonial-heading{
@@ -428,6 +445,7 @@ ul li{
     color:blue;
     font-weight:500;
     font-size: large;
+    text-align: left;
     align-self: flex-start;
 }
 
@@ -523,6 +541,7 @@ ul li{
 /* Start of About Page Styling */
 .about-intro{
     display:flex;
+    flex-direction: column;
     align-items: center;
     justify-content:center;
 }
@@ -541,12 +560,14 @@ ul li{
 
 
 .about-item-1{
-    max-height:250px;
+    min-height:400px;
     object-fit:cover;
     object-position:top;
-    border-radius:25%;
+    border-radius:50%;
     margin-right: 5rem;
-    margin-top:3rem;
+    margin-top:5rem;
+    margin-bottom:5rem;
+    order: 1;
     
 
 }
@@ -556,56 +577,60 @@ ul li{
     max-width: 30%;
     object-fit:cover;
     margin-right: 5rem;
-    margin-top: 3rem;
     margin-left: 5rem;
-
-}
-
-.about-container-1{
-    display: flex;
-    flex-direction: row;
-    flex-wrap:wrap;
-    min-height: 400px;
-    background-color: darkgoldenrod;
-    justify-content:center;
-    align-content:space-between;
-}
-
-
-.about-item-1{
-    max-height:250px;
-    object-fit:cover;
-    object-position:top;
-    border-radius:25%;
-    margin-right: 5rem;
-    margin-top:3rem;
-    
-
-}
-
-.about-item-2{
-    max-height:100px;
-    max-width: 30%;
-    object-fit:cover;
-    margin-right: 5rem;
-    margin-top: 3rem;
+    margin-top: 5em;
     margin-left: 5rem;
+    order:2;
 
 }
-
 
 .about-container-2{
     display: flex;
     flex-direction: row;
     flex-wrap:wrap;
     min-height: 400px;
+    background-color:blue;
+    justify-content:center;
+    align-content:space-between;
+}
+
+
+.about-item-3{
+    max-height:250px;
+    object-fit:cover;
+    object-position:top;
+    border-radius:25%;
+    margin-right: 5rem;
+    margin-top:3rem;
+    order:2
+    
+    
+
+}
+
+.about-item-4{
+   
+    object-fit:cover;
+    margin-right: 5rem;
+    margin-top: 3rem;
+    margin-left: 5rem;
+    order: 1;
+
+}
+
+
+.about-container-3{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    min-height: 400px;
     background-color: darkgoldenrod;
     justify-content:center;
     align-content:space-between;
 }
 
 
-.about-item-1{
+.about-item-5{
     max-height:250px;
     object-fit:cover;
     object-position:top;
@@ -616,7 +641,7 @@ ul li{
 
 }
 
-.about-item-2{
+.about-item-6{
     max-height:100px;
     max-width: 30%;
     object-fit:cover;
@@ -644,8 +669,9 @@ ul li{
 .gallery-image:hover{
     cursor: pointer;
     z-index:1;
-    zoom: 2.5;
+    zoom: 2.0;
     overflow:visible;
+    position: center;
     transition: 2000ms ease-in-ease-out;
 
 }
