@@ -1,8 +1,8 @@
 /* Set default color theme */
 body {
     padding: 0;
-
-    background-image: url(../img/bluefade.jpg);
+    
+    background-image: url(../img/bluefade.jpg); 
     background-size:cover;
     
 }
@@ -161,7 +161,7 @@ ul li{
     align-items:flex-end;
     object-fit: cover;
     object-position: center;
-    margin-bottom: .2rem;
+    margin-bottom: 2.5rem;
    
 }
 
@@ -194,6 +194,7 @@ ul li{
     padding: 0;
     border: 2px solid yellow;
     align-items:center;
+    padding-bottom: 2rem;
 }
 
 
@@ -402,20 +403,10 @@ ul li{
 .available-items{
     display: flex;
     direction:row;
-    justify-content:space-between;
+    flex-wrap: wrap;
+    justify-content:space-around;
     align-items:center;
-    min-height: 160px;
-    margin-left: 2rem;
-    margin-right: 2rem;
-}
-
-.available-items img :hover{
-
-    cursor: pointer;
-    z-index: 1;
-    overflow: visible;
-    zoom: 2.5;
-    transition: 5000ms ease-in-ease-out;
+    margin-bottom: 2rem;
 }
 
 .testimonials-title{
@@ -432,8 +423,9 @@ ul li{
 }
 
 .testimonials{
-    display:flex;
-    flex-wrap: wrap;
+    display:grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
     min-height:400px;
     /* Works on ? axis */
     justify-content:space-between;
