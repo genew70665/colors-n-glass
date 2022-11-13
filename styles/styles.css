@@ -401,12 +401,16 @@ ul li{
 }
 
 .available-items{
-    display: flex;
-    direction:row;
-    flex-wrap: wrap;
-    justify-content:space-around;
-    align-items:center;
+    display:grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat((auto-fill)  3, 1fr);
+    min-height:400px;
+    /* Works on ? axis */
+    justify-content:space-between;
+    padding-bottom: 1.5rem;
+    padding-top: 2rem;
     margin-bottom: 2rem;
+    margin-left: 2rem;
 }
 
 .testimonials-title{
@@ -426,7 +430,7 @@ ul li{
     display:grid;
     gap: 1.5rem;
     grid-template-columns: repeat(3, 1fr);
-    min-height:400px;
+    min-height:300px;
     /* Works on ? axis */
     justify-content:space-between;
     padding-bottom: 1.5rem;
@@ -455,7 +459,7 @@ ul li{
 
 .item{
     width: 30%;
-    min-width: 450px;
+    min-width: 550px;
     max-width: 900px;
     margin: 10px;
     background-color:#f0efbd;
@@ -481,6 +485,7 @@ ul li{
 
 .item h2{
     align-content: center;
+    align-self: center;
 }  
 
 .item:nth-of-type(3){
