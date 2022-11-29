@@ -1,0 +1,118 @@
+/* CSS Style Sheet */
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-image: url(../img/bluefade.jpg);
+    background-size:cover;
+}
+
+
+h1{
+    text-align: center;
+    margin: 0.5rem;
+    color:white;
+    
+}
+.my-nav {
+    display: flex;
+    background: orange;
+    color: whitesmoke;
+    min-height: 60px;
+
+}
+
+.my-nav-items {
+    display: flex;
+    flex-direction:row;
+    font-size:large;
+    justify-content: space-evenly;
+    
+}
+
+.about{
+    position: relative;
+    align-items: center;
+}
+
+
+.intro {
+    position:relative;
+    display:grid;
+    align-items: center;
+    justify-content: center;
+    /* grid-template-columns:500px 500px; */
+    grid-auto-columns: minmax(300px, 600px); 
+    grid-auto-rows: minmax(500px, auto);
+    grid-row-gap: 1.0em;
+    grid-column-gap: 0.5em;
+    margin:10px;
+}
+
+.question{
+    font-style: italic;
+    margin: 0.2 rem;
+}
+
+.answer{
+    margin: 0.5rem;
+}
+
+.intro-items{
+    background-color: black;
+    padding: 1.0rem;
+    border-radius: 5%;
+}
+
+.intro-item-1{
+    /* grid-column: 1/-1; */
+    grid-column: span 2;
+    max-width: 1000px;
+    display:flex;
+    justify-self:center;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.bio-image{
+    border-radius:50%;
+    animation: fadeInImage 3s;
+}
+
+.bio-text{
+    margin: 0.5rem;
+    animation: fadeInText 5s;
+}
+
+.intro-item-2{
+    color: white;
+    grid-column:1;
+    animation: fadeInText 8s;
+}
+
+.intro-item-3{
+    color: white;
+    grid-column:2;
+    grid-row: 2;
+    animation: fadeInText 12s;
+}
+
+
+/* Add keyframes Animations */
+
+@keyframes fadeInImage{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes fadeInText{
+    0% {opacity:0;}
+    100% {opacity: 1;}
+}
+
+
+

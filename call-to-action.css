@@ -1,0 +1,64 @@
+/* CSS for Call to Action */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    position: relative;
+    background-color: skyblue;
+}
+
+.call-to-action{
+    display:grid;
+    grid-gap: 2rem;
+    grid-template-areas: 
+        'work-intro-text work-intro-text work-intro-text'
+        'work-item-1 work-item-2 work-item-3'
+        /* 'other-title other-title -other-title' */
+       
+       
+       /*  ''
+        ''
+        'angel-wings-text angel-wings-image-1'
+        'angel-wings-text angel-wings-image-2'
+        'angel-wings-proceeds-text'
+        'angel-wings-monthly-image aw-monthly-text' */
+    ;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:auto;
+}
+
+.work-intro-text{
+    grid-area: work-intro-text;
+    background-color: blanchedalmond;
+    color: blue;
+    font-size:xx-large;
+    text-align:center;
+}
+
+.work-items{
+    min-height: 60px;
+    min-width: 25%;
+    justify-items:center;
+    background-color:black;
+    color: white;
+    font-size:large;
+}
+
+.work-items img{
+    align-self: center;
+}
+
+work-item-1{
+    grid-area: work-item-1;
+}
+
+work-item-2{
+    grid-area: work-item-2;
+}
+
+work-item-3{
+    grid-area: work-item-3;
+}

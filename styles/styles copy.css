@@ -1,6 +1,6 @@
 /* Set default color theme */
 body {
-    padding: 5px;
+    padding: 0;
     max-width: 2020px;
     align-content: center;;
     background-image: url(../img/bluefade.jpg); 
@@ -54,12 +54,7 @@ p {
 }
 
 .navbar-brand{
-    color: yellow;
-    font-weight:bolder;
-    font-style:italic;
-    font-size: 4rem;
-    font-stretch: expanded;
-    
+    color: #f0efbd;
 }
 
 ul{
@@ -206,7 +201,7 @@ ul li{
     position: relative;
     object-fit:cover;
     padding: 0;
-    /* border: 2px solid yellow; */
+    border: 2px solid yellow;
     align-items:center;
     padding-bottom: 2rem;
 }
@@ -334,98 +329,13 @@ ul li{
     display: block;
     max-width: 75%;
     font-size:medium;
-    color: white;
-    font-weight: 400;
+    color: yellow;
+    font-weight: 300;
     margin-top:5px;
-    animation: fadeIn 8s; 
-}
-
-.featured-items{
-    display: flex;
-    flex-direction: row;
-    flex-wrap:wrap;
-    justify-content:space-around;
-    align-items: center;
-    margin-bottom: 2rem;
-    /* grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: minmax(5px, 20px);
-    grid-template-areas: 
-        'featured-item-1  featured-item-2 featured-item-3 featured-item-4''
-    ;
-    */
-}
-
-.featured-item-box{
-    background-color: black;
-    margin: 1rem;
-    height:fit-content;
-    border: 3px solid orange;
-    border-radius: 15px;
-    justify-items: center;
-    align-content:center;
-    text-align: center;
-}
-
-.featured-item-box img{
-    width: 85%;
-    padding-top: 8px;
-    align-self: center;
-    justify-self: center;
+    animation: fadeIn 5s; 
 }
 
 
-
-.featured-item-1{
-    display:flex;
-    flex-direction: column;
-    width:100%;
-    color: blue;
-    background-color:goldenrod;
-    border: 3px solid orange;
-    border-radius: 15px;
-}
-
-.featured-item-1 h1{
-    align-self:center;
-    font-size: 40px;
-    font-weight:bolder;
-}
-
-
-.featured-item-1 h2{
-    align-self:center;
-    text-decoration: line-through;
-}
-
-.featured-item-text {
-    background-color:#f0efbd;
-    display:flex;
-    flex-direction: columns;
-}
-
-.featured-item-text p{
-    color: blue;
-    font-weight:bold;
-    border:0px;
-    margin: 5px;
-}
-
-.featured-item-2{
-    width: 70;
-    height:min-content;
-}
-.featured-item-3{
-    width:30%;
-
-}
-
-.featured-item-4{
-    width:30%;
-}
-
-.featured-items h3{
-    color: white;
-}
 
 /* Gallery Styling */
 .gallery{
@@ -498,19 +408,18 @@ ul li{
 
 }
 
-/* .available-items{
+.available-items{
     display:grid;
     gap: 1.5rem;
     grid-template-columns: repeat((auto-fill)  3, 1fr);
     min-height:400px;
     /* Works on ? axis */
-  /*  justify-content:space-between;
+    justify-content:space-between;
     padding-bottom: 1.5rem;
     padding-top: 2rem;
     margin-bottom: 2rem;
     margin-left: 2rem;
 }
-*/
 
 .testimonials-title{
     height:80px;
@@ -525,20 +434,19 @@ ul li{
     margin-top: 2rem;
 }
 
-/* .suncatchers{
+.suncatchers{
     display:grid;
     gap: 0.5rem;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows:max-content;
     /* Works on ? axis */
-    /*justify-items:center;
+    justify-items:center;
     align-items:start;
     padding-bottom: 1.5rem;
     padding-top: 2rem;
     margin-bottom: 2rem;
 
 }
-*/
 
 .angel-wings-paragraph-1{
     animation: fadeIn 5s;
