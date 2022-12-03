@@ -17,9 +17,9 @@ h3{
 .grid{
     position:absolute;
     display:grid;
-    grid-gap: 5px;
-    padding-bottom:2rem;
-    margin-bottom:2 rem;
+    grid-gap: 1.5rem;
+    padding-bottom:6rem;
+    margin-bottom:2rem;
     /* grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr 2 fr 3fr;
     grid-auto-rows: 3fr; */
@@ -32,10 +32,40 @@ h3{
         'item-9 item-2 item-3 item-4'
         'item-1 item-6 item-7 item-8' 
         'item-5 item-10 item-11 item-12'
-        'item-13 item-14 item-15 item-15'
-        
+        'item-15 item-14 item-13 item-16'
+        'item-17 item-17 item-17 item-17'
     ;
 }
+
+@media (max-width: 780px){
+    .grid{
+        display: grid;
+        grid-gap: 1.5rem;
+        align-items: center;
+        margin-bottom: 2rem;
+        grid-template-columns: 1fr;
+        grid-template-rows:(10px, auto-fit);
+        grid-template-areas: 
+            'item-9'
+            'item-2'
+            'item-3' 
+            'item-4'
+            'item-5'
+            'item-6' 
+            'item-7'
+            'item-8'
+            'item-9'
+            'item-10' 
+            'item-11'
+            'item-12'
+            'item-13'
+            'item-14' 
+            'item-15'
+            'item-16'
+            'item-17'                 
+            ;
+    } 
+    }
 
 /*@@media (max-width:800px){
     .grid{
@@ -67,8 +97,8 @@ h3{
     */
 
 .gallery-item{
-    padding: 2rem;
-    border:  5px solid darkorange;
+    padding: 1rem;
+    border:  2px solid orange;
     background: #000;
     color: white;
     border-radius: 15px;
@@ -173,8 +203,19 @@ h3{
     grid-area: item-14;
     animation: FadeIn-3 15s;
 }
+
 .gallery-item:nth-child(15){
     grid-area: item-15;
+    animation: FadeIn-3 16s;
+}
+
+.gallery-item:nth-child(16){
+    grid-area: item-16;
+    animation: FadeIn-3 16s;
+}
+
+.gallery-item:nth-child(17){
+    grid-area: item-17;
     animation: FadeIn-3 16s;
 }
 
@@ -184,10 +225,9 @@ h3{
 
 
 
-
 .gallery-item img{
-    max-width: 70%;
-    min-height: 70%;
+    max-width: 80%;
+    min-height: 80%;
     
 }
 
