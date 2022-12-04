@@ -33,76 +33,52 @@ h1{
     
 }
 
-.about{
+.about-main{
     position: relative;
     align-items: center;
 }
 
-
-.intro {
-    position:relative;
-    display:grid;
-    align-items: center;
-    justify-content: center;
-    /* grid-template-columns:500px 500px; */
-    grid-auto-columns: minmax(300px, 600px); 
-    grid-auto-rows: minmax(500px, auto);
-    grid-row-gap: 1.0em;
-    grid-column-gap: 0.5em;
-    margin:10px;
+.about-article{
+    padding: 1rem;
+    border:  2px solid orange;
+    background-color:#f0efbd;
+    color: blue;
+    font-size:larger;
+    border: 3px solid orange;
+    border-radius: 15px;
+    text-align:left;
+    margin-top: 2rem;
+    margin-bottom:2rem;
 }
 
-.question{
-    font-style: italic;
-    margin: 0.2 rem;
+.about-article img{
+    max-height: 250px;
 }
 
-.answer{
-    margin: 0.5rem;
+.about-article p{
+    color:blue;
+    font-weight: 400;
+    
 }
 
-.intro-items{
-    background-color: black;
-    padding: 1.0rem;
-    border-radius: 5%;
-}
-
-.intro-item-1{
-    /* grid-column: 1/-1; */
-    grid-column: span 2;
-    max-width: 1000px;
-    display:flex;
-    justify-self:center;
-    align-items: center;
+.about-intro{
+    display:flex;  
+    flex-direction: row;
+    flex-wrap:wrap;
     justify-content: space-between;
-    color: white;
+    
 }
 
-.bio-image{
-    border-radius:50%;
-    animation: fadeInImage 3s;
+.-about-intro img{
+    max-width: 20%;
+    border: 3px solid orange;
+    margin-right: 5%;
 }
 
-.bio-text{
-    margin: 0.5rem;
-    animation: fadeInText 5s;
+.about-intro p{
+    max-width:50%;
 }
 
-.intro-item-2{
-    color: white;
-    grid-column:1;
-    animation: fadeInText 8s;
-}
-
-.intro-item-3{
-    color: white;
-    grid-column:2;
-    grid-row: 2;
-    animation: fadeInText 12s;
-}
-
-
-/* Add keyframes Animations */
 
 @keyframes fadeInImage{
     0% {opacity: 0;}

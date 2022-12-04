@@ -422,6 +422,10 @@ span{
 
 }
 
+.featured-item-box h5{
+    color:white;
+}
+
 .featured-item-text p{
     color: blue;
     font-weight:bold;
