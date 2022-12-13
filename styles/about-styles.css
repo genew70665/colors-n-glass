@@ -38,14 +38,18 @@ h1{
     grid-gap: 5rem;
     position: relative;
     align-items: center; 
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows:minmax(100px, auto-fit);
     grid-template-areas:
-        'about-article-1 about-article-2'
-        'about-article-3 about-article-4'
-        'about-article-5 about-article-6'
-        'about-article-7 about-article-8'
-        'about-article-9 about-article-10'
+        'about-article-1'
+        'about-article-2'
+        'about-article-3'
+        'about-article-4'
+        'about-article-5' 
+        'about-article-6'
+        'about-article-7'
+        'about-article-8'
+        'about-article-9'
     ; 
 }
 
@@ -67,20 +71,22 @@ h1{
             'about-article-7'
             'about-article-8'
             'about-article-9'
-            'about-article-10'
         ;
     }
 }
 
+.about-part-2{
+    background-color: white;
+    color:black;
+}
+
 .about-article{
-    padding: 1rem;
-    border:  2px solid orange;
-    background-color:#f0efbd;
-    color: blue;
+    padding: 0.5rem;
+    color: white;
     font-size:large;
-    border: 3px solid orange;
-    border-radius: 15px;
     text-align:left;
+    align-items:center;
+    justify-items:center;
     margin-top: 2rem;
     margin-bottom:2rem;
 }
@@ -88,33 +94,41 @@ h1{
 .about-article img{
     max-height: 350px;
     border: 3px solid orange;
-    border-radius: 50%;
+    text-align: center;
 }
 
 .about-article p{
-    color:blue;
+    color:white;
     font-weight: 400;
+    margin-top: 1rem;
     
+}
+
+.about-part-2 p{
+    color: black;
+    font-weight:400;
+    margin-top:1.5rem;
+}
+.avout-intro{
+    background:none;
 }
 
 .-about-intro img{
     max-width: 20%;
     border: 3px solid orange;
-    margin-right: 5%;
+    margin-left: 50%;
 }
 
 .about-intro p{
-   
+    color:white;
+    background:none;
 }
 
 #about-article-1{
     grid-area: about-article-1;
-    min-width:450px;
-    animations
+    color:aquamarine;
     }
     
-}
-
 #about-article-2{
     grid-area: about-article-2;
     /* background-color:#f0efbd; */
@@ -122,18 +136,36 @@ h1{
 
 #about-article-3{
     grid-area: about-article-3;
+    color:black;
 }
 
 #about-article-4{
     grid-area: about-article-4;
+    color:black;
 }
 
 #about-article-5{
     grid-area: about-article-5;
+    color:black;
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    
+}
+
+#about-article-5 img{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    border-radius:0;
+    min-width:auto;
+    margin: 2rem;
 }
 
 #about-article-6{
     grid-area: about-article-6;
+    color:black;
 }
 
 
