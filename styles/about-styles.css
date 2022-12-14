@@ -75,9 +75,10 @@ h1{
     }
 }
 
-.about-part-2{
+.about-part-1{
     background-color: white;
     color:black;
+    padding-bottom:0;
 }
 
 .about-article{
@@ -88,7 +89,6 @@ h1{
     align-items:center;
     justify-items:center;
     margin-top: 2rem;
-    margin-bottom:2rem;
 }
 
 .about-article img{
@@ -99,15 +99,18 @@ h1{
 
 .about-article p{
     color:white;
+    font-family: Helvetica, sans-serif;
     font-weight: 400;
     margin-top: 1rem;
+    border: none;
     
 }
 
 .about-part-2 p{
     color: black;
+    font-family: Helvetica, sans-serif;
     font-weight:400;
-    margin-top:1.5rem;
+    margin-top:0;
 }
 .avout-intro{
     background:none;
@@ -126,7 +129,6 @@ h1{
 
 #about-article-1{
     grid-area: about-article-1;
-    color:aquamarine;
     }
     
 #about-article-2{
@@ -137,6 +139,7 @@ h1{
 #about-article-3{
     grid-area: about-article-3;
     color:black;
+    border: white;
 }
 
 #about-article-4{
@@ -154,19 +157,29 @@ h1{
     
 }
 
-#about-article-5 img{
+#about-article-6 img{
+    min-width:300px;
+    margin-bottom:1.5rem;
+}
+
+#about-article-7{
+    grid-area: about-article-6;
+    color:black;
     display:flex;
     flex-direction: row;
     flex-wrap:wrap;
-    border-radius:0;
-    min-width:auto;
-    margin: 2rem;
+    justify-content: space-around;
 }
 
-#about-article-6{
+#about-article-9{
     grid-area: about-article-6;
     color:black;
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-around;
 }
+
 
 
 #about-article-7{

@@ -670,7 +670,7 @@ span{
 .testimonial-text{
     color:blue;
     font-weight:500;
-    font-size: medium;
+    font-size:small
     text-align: left;
     align-self: flex-start;
     margin-left:1.0rem;
@@ -680,7 +680,7 @@ span{
 
 .item{
     width: 30%;
-    min-width:450px;
+    min-width:350px;
     
     margin: 10px;
     background-color:#f0efbd;
