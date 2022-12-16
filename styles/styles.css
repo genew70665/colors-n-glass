@@ -365,11 +365,12 @@ ul li{
     'featured-item-1 featured-item-1 featured-item-2'  
     'featured-item-3 featured-item-4 featured-item-5'
     'featured-item-6 featured-item-7 featured-item-8'
+    'featured-item-10 featured-item-10 featured-item-11'
     'featured-item-9 featured-item-9 featured-item-9' 
     ;
 }
 
-@media (max-width: 780px){
+@media (max-width: 1080px){
 .featured-items{
     display: grid;
     grid-gap: 1.5rem;
@@ -380,12 +381,15 @@ ul li{
     grid-template-areas: 
         'featured-item-1'
         'featured-item-2'
+        'featured-item-10'
         'featured-item-3' 
         'featured-item-4'
         'featured-item-5'
         'featured-item-6' 
         'featured-item-7'
         'featured-item-8'
+        'featured-item-11'
+        'featured-item-12'
         'featured-item-9'         
         ;
 } 
@@ -482,6 +486,13 @@ span{
     grid-area: featured-item-9;
     width:95%;
 }
+
+.featured-item-10{
+    grid-area: featured-item-10;
+    width:95%;
+}
+
+
 
 .featured-items h3{
     color: white;
@@ -633,19 +644,19 @@ span{
     display:grid;
     gap: 1.5rem;
     grid-template-columns: repeat(3, 1fr);
-    min-height:300px;
+    grid-template-rows: (10px, auttofit);
     /* Works on ? axis */
     justify-content:space-between;
+    font-size:small
     padding-bottom: 1.5rem;
     padding-top: 2rem;
     margin-bottom: 2rem;
 }
 
-@media (max-width:600px){
+@media (max-width:1080px){
     .testimonials{
         justify-items: center;
         display:grid;
-        
         gap: 1.5rem;
         grid-template-columns: 1fr;
         min-height:300px;
@@ -670,7 +681,7 @@ span{
 .testimonial-text{
     color:blue;
     font-weight:500;
-    font-size:small
+    font-size:small;
     text-align: left;
     align-self: flex-start;
     margin-left:1.0rem;
@@ -679,9 +690,6 @@ span{
 }
 
 .item{
-    width: 30%;
-    min-width:350px;
-    
     margin: 10px;
     background-color:#f0efbd;
     color:blue;

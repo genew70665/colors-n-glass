@@ -53,7 +53,7 @@ h1{
     ; 
 }
 
-@media (max-width: 780px){
+@media (max-width: 1080px){
     .about-main{
         display: grid;
         grid-gap: 1.5rem;
@@ -95,6 +95,7 @@ h1{
     max-height: 350px;
     border: 3px solid orange;
     text-align: center;
+    margin-bottom: 1.5rem;
 }
 
 .about-article p{
