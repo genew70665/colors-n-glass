@@ -362,15 +362,23 @@ ul li{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows:minmax(10px, auto-fit);
     grid-template-areas:
+    'featured-item-10 featured-item-10 featured-item-2'  
+    'featured-item-3 featured-item-4 featured-item-5'
+    'featured-item-6 featured-item-7 featured-item-8'
+    'featured-item-1 featured-item-1 featured-item-11'
+    'featured-item-9 featured-item-9 featured-item-9' 
+    ;
+
+    /*
     'featured-item-1 featured-item-1 featured-item-2'  
     'featured-item-3 featured-item-4 featured-item-5'
     'featured-item-6 featured-item-7 featured-item-8'
     'featured-item-10 featured-item-10 featured-item-11'
     'featured-item-9 featured-item-9 featured-item-9' 
-    ;
+    ; */
 }
 
-@media (max-width: 1080px){
+@media (max-width: 1020px){
 .featured-items{
     display: grid;
     grid-gap: 1.5rem;
@@ -647,13 +655,13 @@ span{
     grid-template-rows: (10px, auttofit);
     /* Works on ? axis */
     justify-content:space-between;
-    font-size:small
+    font-size:small;
     padding-bottom: 1.5rem;
     padding-top: 2rem;
     margin-bottom: 2rem;
 }
 
-@media (max-width:1080px){
+@media (max-width:1020px){
     .testimonials{
         justify-items: center;
         display:grid;
@@ -681,7 +689,7 @@ span{
 .testimonial-text{
     color:blue;
     font-weight:500;
-    font-size:small;
+    font-size:1.3em;
     text-align: left;
     align-self: flex-start;
     margin-left:1.0rem;
